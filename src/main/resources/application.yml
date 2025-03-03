@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: encurtador-url]
+    url: ${ENCURTADOR_URL:http://localhost:8080/}
+  r2dbc:
+    url: r2dbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:encurtador_url}${DB_URL_PARAM:?ssl=false}
+    password: ${DB_PASSWORD:postgres}
+    username: ${DB_USER:postgres}
+
+server:
+  port: 8080
