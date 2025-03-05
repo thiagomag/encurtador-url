@@ -9,3 +9,6 @@ spring:
 
 server:
   port: 8080
+  netty:
+    connection-timeout: 20000
+  max-http-request-header-size: 65536
